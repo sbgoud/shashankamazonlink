@@ -36,11 +36,7 @@
       const urlInput = document.getElementById("amazonLink");
       let url = urlInput.value;
 
-      // Basic validation (You might want more robust checks)
-      if (!url.startsWith("https://www.amazon.com")) {
-        alert("Please enter a valid Amazon link.");
-        return;
-      }
+      
 
       const newUrl = url + "&tag=affiliatelink";
       window.location.href = newUrl;
